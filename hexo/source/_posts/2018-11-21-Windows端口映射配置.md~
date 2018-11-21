@@ -6,8 +6,7 @@ categories:
 tags:
 - 内网穿透
 ---
-Windows端口映射配置
-=================
+
 1. 端口映射配置命令
 ~~~
 netsh interface portproxy add v4tov4 listenaddress=192.168.1.166 listenport=11122 connectaddress=192.168.1.128 connectport=22

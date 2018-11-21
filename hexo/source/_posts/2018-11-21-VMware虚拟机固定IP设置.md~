@@ -6,8 +6,7 @@ categories:
 tags:
 - VMware虚拟机
 ---
-VMware虚拟机固定IP设置
-=====================
+
 1. 修改网络适配器名称<br>
 ~~~
 sudo vi /etc/default/grub
