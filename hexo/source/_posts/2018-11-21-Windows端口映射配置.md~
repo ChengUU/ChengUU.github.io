@@ -1,0 +1,26 @@
+---
+title: Windows端口映射配置
+date: 2018-11-21 18:56:17
+categories:
+- 计算机网络
+tags:
+- 内网穿透
+---
+Windows端口映射配置
+=================
+1. 端口映射配置命令
+~~~
+netsh interface portproxy add v4tov4 listenaddress=192.168.1.166 listenport=11122 connectaddress=192.168.1.128 connectport=22
+# 或者
+netsh interface portproxy add v4tov4 listenport=11122 connectaddress=192.168.1.128 connectport=22
+~~~
+2. 查看端口映射列表
+~~~
+netsh interface portproxy show v4tov4
+~~~
+3. 删除指定端口映射项
+~~~
+netsh interface portproxy delete v4tov4 listenaddress=192.168.1.166 listenport=11122
+＃或者
+netsh interface portproxy delete v4tov4 listenport=11122
+~~~
