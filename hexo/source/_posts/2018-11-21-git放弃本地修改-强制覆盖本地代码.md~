@@ -11,9 +11,21 @@ tags:
 
 git pull强制覆盖本地文件在自动化部署项目中很有作用
 - 放弃未缓存的文件修改
-指定文件：git checkout <filename>
-所有未缓存文件：git checkout .
+指定文件：
+```
+git checkout <filename>
+```
+所有未缓存文件：
+```
+git checkout .
+```
 
 - 放弃已缓存文件
-指定文件： git checkout HEAD <filename>
-所有已缓存文件： git chechout HEAD .
+指定文件： 
+```
+git checkout HEAD <filename>
+```
+所有已缓存文件： 
+```
+git chechout HEAD .
+```
